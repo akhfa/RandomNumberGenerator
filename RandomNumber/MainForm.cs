@@ -71,5 +71,38 @@ namespace RandomNumber
             }
             writer.Close();
         }
+
+        public void generateLogNormalRandom()
+        {
+            StreamWriter writer = new StreamWriter("result.csv");
+            double sigma = (double.Parse(sigmaTextBox.Text));
+            double mu = (double.Parse(muTextBox.Text));
+            for (int i = 0; i < int.Parse(jumlahTextBox.Text); i++)
+            {
+                writer.WriteLine(SimpleRNG.GetLogNormal(mu,sigma));
+            }
+            writer.Close();
+        }
+
+        public void generateEksRandom()
+        {
+            StreamWriter writer = new StreamWriter("result.csv");
+            try
+            {
+                double mean = (double.Parse(meanEksTextBox.Text));
+                for (int i = 0; i < int.Parse(jumlahTextBox.Text); i++)
+                {
+                    writer.WriteLine(SimpleRNG.GetExponential(mean));
+                }
+            }catch(System.FormatException)
+            {
+                for (int i = 0; i < int.Parse(jumlahTextBox.Text); i++)
+                {
+                    writer.WriteLine(SimpleRNG.GetExponential());
+                }
+            }
+            
+            writer.Close();
+        }
     }
 }
