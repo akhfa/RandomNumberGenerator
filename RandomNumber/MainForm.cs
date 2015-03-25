@@ -26,7 +26,7 @@ namespace RandomNumber
             MessageBox.Show("Starting calculation. Please wait until next notification.");
             oThread.Start();
             oThread.Join();
-            MessageBox.Show("Calculation Finished");
+            MessageBox.Show("Calculation Finished. See result in result.csv");
         }
 
         private void PoissonButton_Click(object sender, EventArgs e)
@@ -35,7 +35,25 @@ namespace RandomNumber
             MessageBox.Show("Starting calculation. Please wait until next notification.");
             oThread.Start();
             oThread.Join();
-            MessageBox.Show("Calculation Finished");
+            MessageBox.Show("Calculation Finished. See result in result.csv");
+        }
+
+        private void logNormButton_Click(object sender, EventArgs e)
+        {
+            Thread oThread = new Thread(new ThreadStart(generateLogNormalRandom));
+            MessageBox.Show("Starting calculation. Please wait until next notification.");
+            oThread.Start();
+            oThread.Join();
+            MessageBox.Show("Calculation Finished. See result in result.csv");
+        }
+
+        private void EksButton_Click(object sender, EventArgs e)
+        {
+            Thread oThread = new Thread(new ThreadStart(generateEksRandom));
+            MessageBox.Show("Starting calculation. Please wait until next notification.");
+            oThread.Start();
+            oThread.Join();
+            MessageBox.Show("Calculation Finished. See result in result.csv");
         }
 
         public void generateNormalRandom()

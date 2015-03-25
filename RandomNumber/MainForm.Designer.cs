@@ -42,7 +42,7 @@
             this.sigmaTextBox = new System.Windows.Forms.TextBox();
             this.MuLabel = new System.Windows.Forms.Label();
             this.sigmaLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.logNormButton = new System.Windows.Forms.Button();
             this.meanEksTextBox = new System.Windows.Forms.TextBox();
             this.meanLabelEks = new System.Windows.Forms.Label();
             this.EksButton = new System.Windows.Forms.Button();
@@ -165,14 +165,15 @@
             this.sigmaLabel.TabIndex = 13;
             this.sigmaLabel.Text = "Sigma";
             // 
-            // button1
+            // logNormButton
             // 
-            this.button1.Location = new System.Drawing.Point(121, 200);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "LogNormal";
-            this.button1.UseVisualStyleBackColor = true;
+            this.logNormButton.Location = new System.Drawing.Point(121, 200);
+            this.logNormButton.Name = "logNormButton";
+            this.logNormButton.Size = new System.Drawing.Size(75, 23);
+            this.logNormButton.TabIndex = 14;
+            this.logNormButton.Text = "LogNormal";
+            this.logNormButton.UseVisualStyleBackColor = true;
+            this.logNormButton.Click += new System.EventHandler(this.logNormButton_Click);
             // 
             // meanEksTextBox
             // 
@@ -198,6 +199,7 @@
             this.EksButton.TabIndex = 17;
             this.EksButton.Text = "Exponential";
             this.EksButton.UseVisualStyleBackColor = true;
+            this.EksButton.Click += new System.EventHandler(this.EksButton_Click);
             // 
             // label1
             // 
@@ -217,7 +219,7 @@
             this.Controls.Add(this.EksButton);
             this.Controls.Add(this.meanLabelEks);
             this.Controls.Add(this.meanEksTextBox);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.logNormButton);
             this.Controls.Add(this.sigmaLabel);
             this.Controls.Add(this.MuLabel);
             this.Controls.Add(this.sigmaTextBox);
@@ -255,7 +257,7 @@
         private System.Windows.Forms.TextBox sigmaTextBox;
         private System.Windows.Forms.Label MuLabel;
         private System.Windows.Forms.Label sigmaLabel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button logNormButton;
         private System.Windows.Forms.TextBox meanEksTextBox;
         private System.Windows.Forms.Label meanLabelEks;
         private System.Windows.Forms.Button EksButton;
