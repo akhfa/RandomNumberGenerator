@@ -1,0 +1,9 @@
+D:\Proyek\RandomNumber\RandomNumber\bin\Debug\RandomNumber.exe.config
+D:\Proyek\RandomNumber\RandomNumber\bin\Debug\RandomNumber.exe
+D:\Proyek\RandomNumber\RandomNumber\bin\Debug\RandomNumber.pdb
+D:\Proyek\RandomNumber\RandomNumber\obj\Debug\RandomNumber.csprojResolveAssemblyReference.cache
+D:\Proyek\RandomNumber\RandomNumber\obj\Debug\RandomNumber.RandomGenerator.resources
+D:\Proyek\RandomNumber\RandomNumber\obj\Debug\RandomNumber.Properties.Resources.resources
+D:\Proyek\RandomNumber\RandomNumber\obj\Debug\RandomNumber.csproj.GenerateResource.Cache
+D:\Proyek\RandomNumber\RandomNumber\obj\Debug\RandomNumber.exe
+D:\Proyek\RandomNumber\RandomNumber\obj\Debug\RandomNumber.pdb
